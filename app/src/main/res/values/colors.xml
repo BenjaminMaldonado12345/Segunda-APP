@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    
+    
+    // Colores de aplicacion
+    <color name="Primary">#1f1f1f</color>
+    <color name="PrimaryDark">#181818</color>
+    <color name="Secondary">#ee9361</color>
+    <color name="Accent">#FFFFFF</color>
+    <color name="Gold">#ffe78f</color>
+    <color name="Black_alpha">#98000000</color>
+
+
+    <color name="red">#FF0303</color>
+</resources>

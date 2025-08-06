@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graf"
+    app:startDestination="@id/horoscopoFragment">
+
+    <fragment
+        android:id="@+id/horoscopoFragment"
+        android:name="com.benjamin.horoscopoapp.UI.home.horoscopo.HoroscopoFragment"
+        android:label="fragment_horoscopo"
+        tools:layout="@layout/fragment_horoscopo" >
+        <action
+            android:id="@+id/action_horoscopoFragment_to_horoscopeDetailActivity"
+            app:destination="@id/horoscopeDetailActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/palmistryFragment"
+        android:name="com.benjamin.horoscopoapp.UI.home.palmistry.palmistryFragment"
+        android:label="fragment_palmistry"
+        tools:layout="@layout/fragment_palmistry" />
+    <fragment
+        android:id="@+id/luckFragment"
+        android:name="com.benjamin.horoscopoapp.UI.home.luck.luckFragment"
+        android:label="fragment_luck"
+        tools:layout="@layout/fragment_luck" />
+    <activity
+        android:id="@+id/horoscopeDetailActivity"
+        android:name="com.benjamin.horoscopoapp.UI.home.detail.HoroscopeDetailActivity"
+        android:label="activity_horoscope_detail"
+        tools:layout="@layout/activity_horoscope_detail" >
+    <argument
+        android:name="type"
+        app:argType="com.benjamin.horoscopoapp.domain.model.HoroscopeModel" />
+    </activity>
+</navigation>
