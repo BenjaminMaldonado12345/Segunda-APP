@@ -77,6 +77,15 @@ dependencies {
 
     implementation("androidx.recyclerview:recyclerview:1.3.1")
 
+    val versionCamera = "1.4.0"
+
+    implementation("androidx.camera:camera-core:${versionCamera}")
+    implementation("androidx.camera:camera-camera2:${versionCamera}")
+    implementation("androidx.camera:camera-view:${versionCamera}")
+    implementation("androidx.camera:camera-video:${versionCamera}")
+    implementation("androidx.camera:camera-extensions:${versionCamera}")
+    implementation("androidx.camera:camera-lifecycle:${versionCamera}")
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
